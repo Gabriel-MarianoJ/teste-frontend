@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/registerproperties.css">
+    <title>Registrar imóveis</title>
+</head>
+<body>
+    <header id="header">
+        <h1 id="logoName">Gabriel Mariano</h1>
+
+        <div id="navButtons">
+            <button class="navButton" onclick="window.location.href='presentation.html'">Início</button>
+            <button class="navButton" onclick="window.location.href='listProperties.html'">Ver imóveis</button>
+        </div>
+    </header>
+
+    <main id="content">
+        <form class="registerForm">
+            <legend class="greenText">Cadastrar imóvel</legend>
+            <label for="title" class="greenText">Título:</label><br>
+            <input type="text" id="title" name="title" required><br>
+
+            <label for="address" class="greenText">Endereço:</label><br>
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="price" class="greenText">Preço:</label><br>
+            <select id="price" name="price" required>
+                <option value="0-25k">R$0 até R$25.000</option>    
+                <option value="25k-50k">R$25.001 até R$50.000</option>    
+                <option value="50k-75k">R$50.001 até R$75.000</option>    
+                <option value="75k-100k">R$75.001 até R$100.000</option>    
+                <option value="100k-150k">R$100.001 até R$150.000</option>    
+                <option value="150k+">R$150.000 ou mais</option>    
+            </select><br>
+
+            <label for="phone" class="greenText">Telefone / Celular :</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="description" class="greenText">Descrição:</label><br>
+            <textarea type="text" id="description" name="description" required></textarea><br>
+
+            <label for="image" class="greenText">Imagem:</label>
+            <input type="file" id="image" name="image" accept="image/png, image/jpeg" required><br>
+
+            <input type="submit" id="send" name="send">
+        </form>
+    </main>
+
+    <footer class="greenText">
+        &COPY; Gabriel Mariano
+    </footer>
+</body>
+</html>
